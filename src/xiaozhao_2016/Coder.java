@@ -12,6 +12,7 @@ public class Coder {
             return null;
         }
         List<StrInfo> list = new ArrayList<>();
+
         for(int i = 0; i < A.length; ++i) {
             String str = A[i].toLowerCase();
             int count = findCount(str);
