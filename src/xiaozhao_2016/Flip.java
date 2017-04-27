@@ -36,7 +36,6 @@ public class Flip {
         if(row > 0) {
             A[row - 1][col] = A[row - 1][col] ^ 1;
         //    A[row - 1][col] ^= 1;
-
         }
         if(col > 0) {
             A[row][col - 1] = A[row][col - 1] ^ 1;
