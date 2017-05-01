@@ -25,7 +25,7 @@ import java.util.Set;
  abcqwer
  */
 
-public class StringSet {
+public class CharSet {
     public void getString(){
         try(Scanner in = new Scanner(System.in)){
             while(in.hasNext()) {
