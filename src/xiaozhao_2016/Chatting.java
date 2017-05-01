@@ -57,13 +57,15 @@ public class Chatting {
                     in.nextLine();
                 }
                 int res = 0;
+                //三重循环，要找优化方法
                 for(int i = bGetStart; i <= bGetEnd; ++i) {
                     boolean tag = false;
                     for(int j = 0; j < aRestTimes; ++j) {
                         int aIndex = j << 1;
                         for(int k = 0; k < bRestTimes; ++k) {
                             int bIndex = k << 1;
-                            if(!(bPart[bIndex] + i > aPart[aIndex + 1] || bPart[bIndex + 1] + i < aPart[aIndex])) {
+                            if(!(bPart[bIndex] + i > aPart[aIndex + 1]
+                                    || bPart[bIndex + 1] + i < aPart[aIndex])) {
                                 ++res;
                                 tag = true;
                                 break;
