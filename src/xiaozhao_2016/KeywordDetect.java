@@ -33,7 +33,7 @@ public class KeywordDetect {
             }
         }
         res = new int[list.size()];
-        for(int i = 0; i < list.size(); ++i) {
+        for(int i = 0; i < list.size(); ++i) {          //list.toArray(T[])的返回值为Object,比较麻烦，使用时要注意
             res[i] = list.get(i);
         }
         return res;
