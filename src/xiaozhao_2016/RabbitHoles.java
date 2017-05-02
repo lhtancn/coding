@@ -35,7 +35,7 @@ public class RabbitHoles {
                     holes[index] = 1;
                     index = index + i + 2;
                     index = index % 20;
-                    System.out.print(index + " ");
+//                    System.out.print(index + " ");
                 }
                 int resHoles = 0;
                 for(int i = 0; i < 20; ++i) {
