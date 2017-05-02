@@ -53,14 +53,14 @@ class CreateTrie {
         boolean isKeywordEnd() {
             return end;
         }
-        void setKeywordEnd(boolean end) {
-            this.end = end;
+        void setKeywordEnd() {                          //调用此方法时，仅对end设置为真，所以可以不用传参，直接设置
+            this.end = true;
         }
     }
 
     private TrieNode rootNode = new TrieNode();
 
-    public boolean filter(String text) {
+    boolean filter(String text) {
         TrieNode tempNode = rootNode;
         int begin = 0;            //回滚不可少
         int position = 0;
@@ -81,7 +81,7 @@ class CreateTrie {
         return false;
     }
 
-    public void addWord(String str) {
+    void addWord(String str) {                  //这个类中的方法范围限定默认即可，因为仅有同一个包中的进行了调用
         TrieNode tempNode = rootNode;
         for(int i = 0; i < str.length(); ++i) {
             Character c = str.charAt(i);
@@ -95,7 +95,7 @@ class CreateTrie {
             tempNode = node;
 
             if(i == str.length() - 1) {
-                tempNode.setKeywordEnd(true);
+                tempNode.setKeywordEnd();
             }
         }
     }
