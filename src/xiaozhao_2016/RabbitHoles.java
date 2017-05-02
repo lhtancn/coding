@@ -16,6 +16,10 @@ import java.util.Scanner;
  输出描述:
  每组数据一行按从小到大的顺序输出兔子可能在的洞，数字之间用空格隔开。若每个洞都不肯能藏着兔子，输出-1。
  */
+
+/**
+ * 这题好神奇，直觉上对20大数循环且间隔递增不均等，最后也能保持在固定几个洞上循环（一个测试用例：20 18979）
+ */
 public class RabbitHoles {
     public void findRabbit(){
         try(Scanner in = new Scanner(System.in)) {
@@ -31,6 +35,7 @@ public class RabbitHoles {
                     holes[index] = 1;
                     index = index + i + 2;
                     index = index % 20;
+                    System.out.print(index + " ");
                 }
                 int resHoles = 0;
                 for(int i = 0; i < 20; ++i) {
