@@ -39,7 +39,7 @@ import java.util.Scanner;
  */
 
 /**
- * 练习链表的使用，对链表的定义要掌握
+ * 练习链表的使用，对链表的定义要掌握~~~~~此题还有运用位运算的解法，很赞的思路
  */
 public class Discard {
     public void getLast() {
