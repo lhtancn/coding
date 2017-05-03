@@ -38,6 +38,9 @@ public class Apples {
                 res = res / (n - 1);
             }
             ++lastTake;
+            if(lastTake == Integer.MAX_VALUE) {     //防止无结果时，进入无限循环
+                return -1;
+            }
         }
 
         return res;
