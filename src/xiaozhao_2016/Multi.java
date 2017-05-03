@@ -77,10 +77,6 @@ public class Multi {
 
     /**
      * 要注意按列计算时数组下标的正确性
-     * @param col
-     * @param matrix
-     * @param rows
-     * @param cols
      */
     private void getColMulti(long[][] col, int[][] matrix, int rows, int cols) {
         for(int i = 0; i < cols; ++i) {
