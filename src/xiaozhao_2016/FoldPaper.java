@@ -53,11 +53,11 @@ public class FoldPaper {
 }
 
 
- class TreeNode {
+ class TreeNode {           //方法和变量都可包级私有
     String val;
     TreeNode left;
     TreeNode right;
-    public TreeNode(String val){
+    TreeNode(String val){
         this.val = val;
     }
 }
